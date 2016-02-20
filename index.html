@@ -28,14 +28,14 @@
     	  <img src="images/bobst.png" class="fix" />
 
     	  <!-- LL2 -->
-    	  <img class="fixprinterll2" id="printerll2a" src="images/printer-on.png" style="left:160px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
-    	  <img class="fixprinterll2" id="printerll2b" src="images/printer-on.png" style="left:220px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
-    	  <img class="fixprinterll2" id="printerll2c" src="images/printer-on.png" style="left:280px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 A" id="printerll2a" src="images/printer-on.png" style="left:160px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 B" id="printerll2b" src="images/printer-on.png" style="left:220px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 C" id="printerll2c" src="images/printer-on.png" style="left:280px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- LL1 -->
-    	  <img class="fixprinterll1" id="printerll1a" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
-    	  <img class="fixprinterll1" id="printerll1b" src="images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
-    	  <img class="fixprinterll1" id="printerll1color" src="images/printer-on.png" style="left:255px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="Printer LL1 A" id="printerll1a" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="Printer LL1 B" id="printerll1b" src="images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="Printer LL1 Color" id="printerll1color" src="images/printer-on.png" style="left:255px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinterll1" id="printerll1c" src="images/printer-on.png" style="left:360px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinterll1" id="printerll1d" src="images/printer-on.png" style="left:415px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
@@ -89,5 +89,8 @@
 </body>
 
 <script src="javascripts/oppa_bobst_style.js"></script>
-
+<script> $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </html>

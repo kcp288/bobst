@@ -1,6 +1,12 @@
 // Set background color
 document.body.style.background = "linear-gradient(#90b8e6, #eff4f3)";
 
+function timezone(){
+	var d = new Date()
+	var n = d.getTimezoneOffset();
+	console.log(n);
+}
+
 // TODO: Toggle nighttime
 //document.body.style.background = "linear-gradient(#13185d, #0076a4)";
 
