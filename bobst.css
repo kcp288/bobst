@@ -112,4 +112,21 @@ div.printerBox div.celltitle { margin:0; font-size:1em; background-color:#818790
 div.printerBox div.cell { font-size:1em; padding:3px; height:auto; border-left: solid 14px #818790; min-width: 275px; background-color: #ffffff; color:#000000; }
 .center { text-align:center; }
 
-div#refresh { position:fixed; bottom:5px; right:5px; border:solid 3px blue; padding:3px; color:#000000; background-color: #ffffff; }
+div#refresh { 
+	text-transform: uppercase;
+	color: #e4edf2;
+	font-weight: 400;
+
+	/*
+	position:fixed; 
+	bottom:5px; 
+	right:5px; 
+	border:solid 3px blue; 
+	padding:3px; 
+	color:#000000; 
+	background-color: #ffffff; */
+}
+
+
+
+

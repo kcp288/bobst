@@ -11,7 +11,7 @@ $(function() { //onload, runs when page finishes loading
 //updates the refresh indicator text
 function updateTimer() {
 	timeLeft = Math.max(timeLeft-1,0);
-	$("div#refresh").html("This page will refresh in " + timeLeft + " seconds");	
+	$("div#refresh").html("Updating status in " + timeLeft + " seconds");	
 }
 
 //updates printer statuses
