@@ -10,10 +10,10 @@ function chngimg(element) {
     var img = document.getElementById(element_name).src;
 
     if (img.indexOf('/images/printer-on.png')!=-1) {
-            document.getElementById(element_name).src = '/images/printer-off.png';
+            document.getElementById(element_name).src = 'images/printer-off.png';
     }
     else {
-        document.getElementById(element_name).src = '/images/printer-on.png';
+        document.getElementById(element_name).src = 'images/printer-on.png';
     }
 }
 
