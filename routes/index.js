@@ -137,22 +137,38 @@ printers.push({
 
 
 // status
+
+/**
 var status = "unknown";
+for (var i=0; i<printers.length; i++) {
+	var printer = printers[i];
+	if ((printer.type == "HP9050") || (printer.type == "HP4515")) {
+		fetchDeviceStatusHP9050(printer);
+	} else if (printer.type == "HPM806") {
+		fetchDeviceStatusHPM806(printer);
+	} else if (printer.type == "HP4700") {
+		fetchDeviceStatusHP4700(printer);
+	}
 
-for (var i = 0; i < printers.length; i++){
-	request('http://' + printers.ip + '/hp/device/this.LCDispatcher', function(err,response,body){
-		status = heysup(body);
-	});
-}
+}*/
+var status="sup";
+// 3 types of printers -HP9050, HPM806 and HP4700
+// LL1 Printer
+request('http://' + printers[0].ip + '/hp/device/this.LCDispatcher', function(err,response,body){
+console.log(body);
+	if (!err && response.statusCode == 200) {
+    var $ = cheerio.load(body);
+    $('form').each(function(i, element){
+				console.log(i);
+    });
+  }
+});
 
-
-function heysup(body){
-	return "hey";
-}
-
+// LL2 Printer
+console.log(status);
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {status:status});
+  res.render('index');
 });
 
 module.exports = router;

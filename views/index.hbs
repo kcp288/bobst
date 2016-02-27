@@ -1,24 +1,31 @@
 
 <head>
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/sticky-footer.css" rel="stylesheet">
     <link href="/stylesheets/oppa-bobst-style.css" rel="stylesheet">
 
     <link href="/stylesheets/bobst.css" rel="stylesheet">
     <link href="/stylesheets/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="/javascripts/jquery-min.js"></script>     
-    <script type="text/javascript" src="/javascripts/printers.js"></script>
-    <script type="text/javascript" src="/javascripts/tank.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
+    <!--<script type="text/javascript" src="/javascripts/printers.js"></script>-->
+  <!---  <script type="text/javascript" src="/javascripts/tank.js"></script>-->
 </head>
 
 <title> Where Can I Print In Bobst?</title>
 
 <!-- Our lovely library -->
     <div style="margin:auto; text-align:center"><h1>Where Can I Print in Bobst?</h1>
-{{status}}
 <div class="container">
 <div class="row">
+  Current Printer Status:
+<ul>No Response:
+
+  <li> 4 Fl Printer </li>
+  <li> 6 Fl Printer </li>
+  <li> 1 Fl Printer </li>
+  <li>  LL2A Printer </li>
+</ul>
+Good Status:
 
     <div class="col-md-5">
     	<div style="position: relative; left: 0; top: 0;">
@@ -26,7 +33,7 @@
     	  <img src="images/bobst.png" class="fix" />
 
     	  <!-- LL2 -->
-    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 A" id="printerll2a" src="images/printer-on.png" style="left:160px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 A" id="printerll2a" src="images/printer-off.png" style="left:160px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 B" id="printerll2b" src="images/printer-on.png" style="left:220px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 C" id="printerll2c" src="images/printer-on.png" style="left:280px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
@@ -38,44 +45,23 @@
     	  <img class="fixprinterll1" id="printerll1d" src="/images/printer-on.png" style="left:415px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 1 -->
-    	  <img class="fixprinter1" id="printer1a" src="/images/printer-on.png" style="left:230px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinter1" id="printer1a" src="/images/printer-off.png" style="left:230px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinter1" id="printer1b" src="/images/printer-on.png" style="left:297px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 3 -->
     	  <img class="fixprinter3" id="printer3" src="/images/printer-on.png" style="left:150px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 4 -->
-    	  <img class="fixprinter4" id="printer4" src="/images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinter4" id="printer4" src="/images/printer-off.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 5 -->
     	  <img class="fixprinter5" id="printer5" src="/images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinter5" id="printer5color" src="/images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)" />
 
     	  <!-- 6 -->
-    	  <img class="fixprinter6" id="printer6" src="/images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinter6" id="printer6" src="/images/printer-off.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	</div>
     </div>
-
-    <div class="col-md-5">
-      <div class="container">
-<div id="layout">
-        <div class="title">Bobst Library Printers Status</div>
-        <div id="urgent" class="status">
-            <span class="statusHead">URGENT: SERVICE IMMEDIATELY</span>
-        </div>
-        <div id="noresponse" class="status">
-            <span class="statusHead">No Response: Please Investigate</span>
-        </div>
-        <div id="needservice" class="status">
-            <span class="statusHead">Needs Service Soon</span>
-        </div>
-        <div id="goodservice" class="status">
-            <span class="statusHead">Good Service</span>
-        </div>
-        <div id="refresh"></div>
-    </div>
-
-            <a style="font-size: 2em" href="https://youtu.be/wABKM73YSrE">Coming Soon...</a>
       </div>
     </div>
 </div>
