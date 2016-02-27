@@ -14,4 +14,4 @@ localhost:3000
 ```
 
 ## Production
-This is live at bobstprinter.tech
+This is live at http://bobstprinter.tech. Also relevant: https://youtu.be/wABKM73YSrE
