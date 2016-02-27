@@ -4,11 +4,21 @@ document.body.style.background = "linear-gradient(#90b8e6, #eff4f3)";
 // TODO: Toggle nighttime
 //document.body.style.background = "linear-gradient(#13185d, #0076a4)";
 
+function showdiv(id){
+  var change = document.getElementById(id);
+  if (change.style.display === 'none'){
+    change.style.display = 'block';
+  } else {
+    change.style.display = 'none';
+  }
+}
+
 // Change color of printer on click
 function chngimg(element) {
     var element_name = element.id;
     var img = document.getElementById(element_name).src;
-
+    var audio = new Audio('./pop.mp3');
+    audio.play();
     if (img.indexOf('/images/printer-on.png')!=-1) {
             document.getElementById(element_name).src = 'images/printer-off.png';
     }

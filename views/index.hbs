@@ -1,78 +1,88 @@
 
+
+<html>
 <head>
-    <link href="/stylesheets/sticky-footer.css" rel="stylesheet">
+        <link href="/stylesheets/bobst.css" rel="stylesheet">
+
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/oppa-bobst-style.css" rel="stylesheet">
 
-    <link href="/stylesheets/bobst.css" rel="stylesheet">
     <link href="/stylesheets/style.css" rel="stylesheet">
-    <script src="/javascripts/jquery.magnific-popup.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
-    <link href ="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css" rel = "stylesheet">
 
-    <!--<script type="text/javascript" src="/javascripts/printers.js"></script>-->
-  <!---  <script type="text/javascript" src="/javascripts/tank.js"></script>-->
+
+    <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
 </head>
 
 <title> Where Can I Print In Bobst?</title>
+<body>
 
 <!-- Our lovely library -->
     <div style="margin:auto; text-align:center"><h1>Where Can I Print in Bobst?</h1>
 <div class="container">
-<!--<div class="row">
-  <div id = "status">
-  <h3>Current Printer Status:</h2>
-  <div class="con">
-  <div class="front">No Response:</div>
-   4 Fl Printer <br>
-   6 Fl Printer<br>
- 1 Fl Printer<br>
-  LL2A Printer<br>
-</div>
-Good Status:-->
+<div class="row">
 
-</div>
     <div class="col-md-5">
     	<div style="position: relative; left: 0; top: 0;">
           <!-- Background image -->
-    	  <img src="images/bobst.png" class="fix" />
+    	  <img src="/images/bobst.png" class="fix" />
 
     	  <!-- LL2 -->
-    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 A" id="printerll2a" src="images/printer-off.png" style="left:160px" onmouseover="this.style.cursor='pointer'">
-    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 B" id="printerll2b" src="images/printer-on.png" style="left:220px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinterll2" data-toggle="tooltip" title="Printer LL2 C" id="printerll2c" src="images/printer-on.png" style="left:280px" onmouseover="this.style.cursor='pointer'" />
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer A" id="printerll2a" src="images/printer-off.png" style="left:160px" onmouseover="this.style.cursor='pointer'" />
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer B" id="printerll2b" src="images/printer-on.png" style="left:220px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer C" id="printerll2c" src="images/printer-on.png" style="left:280px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- LL1 -->
-    	  <img class="fixprinterll1" data-toggle="tooltip" title="Printer LL1 A" id="printerll1a" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinterll1" data-toggle="tooltip" title="Printer LL1 B" id="printerll1b" src="/images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinterll1" data-toggle="tooltip" title="Printer LL1 Color" id="printerll1color" src="/images/printer-on.png" style="left:255px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinterll1" id="printerll1c" src="/images/printer-on.png" style="left:360px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinterll1" id="printerll1d" src="/images/printer-on.png" style="left:415px" onmouseover="this.style.cursor='pointer'"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="LL1 Printer A" id="printerll1a" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="LL1 Printer B" id="printerll1b" src="images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="LL1 Color Printer" id="printerll1color" src="images/printer-on.png" style="left:255px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="LL1 Printer C" id="printerll1c" src="images/printer-on.png" style="left:360px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinterll1" data-toggle="tooltip" title="LL1 Printer D" id="printerll1d" src="images/printer-on.png" style="left:415px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 1 -->
-    	  <img class="fixprinter1" id="printer1a" src="/images/printer-off.png" style="left:230px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinter1" id="printer1b" src="/images/printer-on.png" style="left:297px" onmouseover="this.style.cursor='pointer'" />
+    	  <img class="fixprinter1" data-toggle="tooltip" title="1st Floor Printer A" id="printer1a" src="images/printer-on.png" style="left:230px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinter1" data-toggle="tooltip" title="1st Floor Printer B" id="printer1b" src="images/printer-on.png" style="left:297px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 3 -->
-    	  <img class="fixprinter3" id="printer3" src="/images/printer-on.png" style="left:150px" onmouseover="this.style.cursor='pointer'" />
+    	  <img class="fixprinter3" data-toggle="tooltip" title="3rd Floor Printer" id="printer3" src="images/printer-on.png" style="left:150px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 4 -->
-    	  <img class="fixprinter4" id="printer4" src="/images/printer-off.png" style="left:277px" onmouseover="this.style.cursor='pointer'" />
+    	  <img class="fixprinter4" data-toggle="tooltip" title="4th Floor Printer"id="printer4" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 5 -->
-    	  <img class="fixprinter5" id="printer5" src="/images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" />
-    	  <img class="fixprinter5" id="printer5color" src="/images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'"/>
+    	  <img class="fixprinter5" data-toggle="tooltip" title="5th Floor Printer" id="printer5" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
+    	  <img class="fixprinter5" data-toggle="tooltip" title="5th Floor Color Printer" id="printer5color" src="images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)" />
 
     	  <!-- 6 -->
-    	  <img class="fixprinter6" id="printer6" src="/images/printer-off.png" style="left:277px" onmouseover="this.style.cursor='pointer'"/>
+    	  <img class="fixprinter6" data-toggle="tooltip" title="6th Floor Printer" id="printer6" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	</div>
     </div>
-      </div>
+
+    <div class="col-md-5">
+
+            <!--<a style="font-size: 2em" href="https://youtu.be/wABKM73YSrE">Coming Soon...</a>-->
     </div>
 </div>
 </div>
-<script src = "http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
+
+
+
+</body>
+
 <script src="/javascripts/oppa_bobst_style.js"></script>
 <script> $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+<script>
+function showdiv(id){
+  var change = document.getElementById(id);
+  console.log(change);
+  if (change.style.display === 'none'){
+    change.style.display = 'block';
+  } else {
+    change.style.display = 'none';
+  }
+}
+</script>
+
+</html>
