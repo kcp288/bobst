@@ -25,7 +25,45 @@ h1 {
 	letter-spacing: 2px;
 }
 
+body .con {
+  width: 300px;
+  height: 100px;
+	float:left;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  line-height: 30px;
+	font-size: 23px;
+  text-align: center;
+}
+body .con .front {
+	line-height:100px;
+	font-size:30px;
+  width: 300px;
+  height: 100px;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 4px;
+  z-index: 2;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+#none{
+	width: 200px;
+  height: 60px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	width: 200px;
+ height: 60px;
+ background: #fff;
+ position: absolute;
+ border-radius: 4px;
+ z-index: 2;
+}
+#status{
 
+	padding:30px;
+	letter-spacing: 1.1px;
+
+}
 button {
   position: block;
   font-weight: bold;
