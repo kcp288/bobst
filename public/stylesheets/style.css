@@ -3,9 +3,11 @@
 
 html {
 	height: 100%;
+	overflow:hidden;
 	background: linear-gradient(#90b8e6, #eff4f3);
 }
 body {
+	overflow:hidden;
   padding: 50px;
   font: 14px "Lato", Helvetica, Arial, sans-serif;
 }
