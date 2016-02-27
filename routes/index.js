@@ -1,6 +1,7 @@
 var express = require('express');
 var request = require('request');
 var router = express.Router();
+var cheerio = require('cheerio');
 
 //array for holding printer objects
 var printers = [];
@@ -135,7 +136,7 @@ printers.push({
 });
 
 
-// status 
+// status
 var status = "unknown";
 
 for (var i = 0; i < printers.length; i++){
