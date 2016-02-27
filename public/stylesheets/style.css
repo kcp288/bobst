@@ -43,16 +43,17 @@ button:hover {
 	color:white;
 	background: #ec4444;
 	padding: 20px 30px;
-	text-align: left;
+	text-align: center;
 	max-width: 400px;
 	margin: 40px auto;
 	position: relative;
 }
 #small-dialog {
+
 	color:white;
 	background: #47b85f;
 	padding: 20px 30px;
-	text-align: left;
+	text-align: center;
 	max-width: 400px;
 	margin: 40px auto;
 	position: relative;
