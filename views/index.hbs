@@ -26,7 +26,7 @@
     	  <img src="/images/bobst.png" class="fix" />
 
     	  <!-- LL2 -->
-    	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer A" id="printerll2a" src="images/printer-off.png" style="left:160px" onmouseover="this.style.cursor='pointer'" />
+    	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer A" id="printerll2a" src="images/printer-off.png" style="left:160px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)" />
     	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer B" id="printerll2b" src="images/printer-on.png" style="left:220px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinterll2" data-toggle="tooltip" title="LL2 Printer C" id="printerll2c" src="images/printer-on.png" style="left:280px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
@@ -45,19 +45,36 @@
     	  <img class="fixprinter3" data-toggle="tooltip" title="3rd Floor Printer" id="printer3" src="images/printer-on.png" style="left:150px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
 
     	  <!-- 4 -->
-    	  <img class="fixprinter4" data-toggle="tooltip" title="4th Floor Printer"id="printer4" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
-
+    	  <a class="popup-with-move-anim" href="#small-dialog2">    <img class="fixprinter4" data-toggle="tooltip" title="4th Floor Printer"id="printer4" src="images/printer-off.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/></a>
+          <div id="small-dialog2"class="zoom-anim-dialog mfp-hide">
+            <h1>URGENT: SERVICE IMMEDIATELY</h1>
+            Status: TRAY 2 OPEN
+            Toner & Maintenance
+            Toner: 1%
+            Maintenance Kit: 44%
+            Paper Trays
+            Tray 1: Empty
+            Tray 2: Unknown
+            Tray 3: Unknown          </div>
     	  <!-- 5 -->
     	  <img class="fixprinter5" data-toggle="tooltip" title="5th Floor Printer" id="printer5" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinter5" data-toggle="tooltip" title="5th Floor Color Printer" id="printer5color" src="images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)" />
-<a class="popup-with-move-anim" href="#small-dialog">    	  <img class="fixprinter6" data-toggle="tooltip" title="6th Floor Printer" id="printer6" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'"/>
+<a class="popup-with-move-anim" href="#small-dialog">    	  <img class="fixprinter6" data-toggle="tooltip" title="6th Floor Printer" id="printer6" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'"  onclick="chngimg(this)"/>
 </a>
 
 <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
 <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-	<h1>Dialog example</h1>
-	<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
-</div>
+  <h1>Good Service</h1>
+  Status: Ready
+Toner & Maintenance
+Toner: 90%
+Maintenance Kit: 80%
+Paper Trays
+Tray 1: Empty
+Tray 2: 20 - 40%
+Tray 3: 40 - 100%
+Tray 4: 40 - 100%
+Tray 5: 40 - 100%</div>
     	  <!-- 6 -->
     	</div>
     </div>

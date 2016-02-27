@@ -19,12 +19,13 @@ function chngimg(element) {
     var img = document.getElementById(element_name).src;
     var audio = new Audio('./pop.mp3');
     audio.play();
-    if (img.indexOf('/images/printer-on.png')!=-1) {
+    // togglin
+    /*if (img.indexOf('/images/printer-on.png')!=-1) {
             document.getElementById(element_name).src = 'images/printer-off.png';
     }
     else {
         document.getElementById(element_name).src = 'images/printer-on.png';
-    }
+    }*/
 }
 
 // TODO: Get actual printer data!

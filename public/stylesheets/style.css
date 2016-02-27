@@ -39,9 +39,18 @@ button:hover {
 	background: white;
 }
 
-
+#small-dialog2 {
+	color:white;
+	background: #ec4444;
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 400px;
+	margin: 40px auto;
+	position: relative;
+}
 #small-dialog {
-	background: white;
+	color:white;
+	background: #47b85f;
 	padding: 20px 30px;
 	text-align: left;
 	max-width: 400px;
