@@ -2,13 +2,12 @@
 
 <html>
 <head>
-        <link href="/stylesheets/bobst.css" rel="stylesheet">
-
+    <link href="/stylesheets/bobst.css" rel="stylesheet">
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/oppa-bobst-style.css" rel="stylesheet">
 
     <link href="/stylesheets/style.css" rel="stylesheet">
-
+    <link href ="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css" rel = "stylesheet">
 
     <script type="text/javascript" src="/javascripts/jquery-min.js"></script>
 </head>
@@ -51,9 +50,15 @@
     	  <!-- 5 -->
     	  <img class="fixprinter5" data-toggle="tooltip" title="5th Floor Printer" id="printer5" src="images/printer-on.png" style="left:145px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	  <img class="fixprinter5" data-toggle="tooltip" title="5th Floor Color Printer" id="printer5color" src="images/printer-on.png" style="left:200px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)" />
+<a class="popup-with-move-anim" href="#small-dialog">    	  <img class="fixprinter6" data-toggle="tooltip" title="6th Floor Printer" id="printer6" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'"/>
+</a>
 
+<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+	<h1>Dialog example</h1>
+	<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+</div>
     	  <!-- 6 -->
-    	  <img class="fixprinter6" data-toggle="tooltip" title="6th Floor Printer" id="printer6" src="images/printer-on.png" style="left:277px" onmouseover="this.style.cursor='pointer'" onclick="chngimg(this)"/>
     	</div>
     </div>
 
@@ -67,6 +72,8 @@
 
 
 </body>
+<script src = "http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
+<script src = "/javascripts/popup.js"></script>
 
 <script src="/javascripts/oppa_bobst_style.js"></script>
 <script> $(function () {
