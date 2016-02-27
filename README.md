@@ -16,4 +16,4 @@ localhost:3000
 ## Production
 This is live at http://bobstprinter.tech. 
 
-See our market research at: https://www.youtube.com/watch?v=u6rI5T5WZIw
+See our market research at: https://youtu.be/wABKM73YSrE
